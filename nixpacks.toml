@@ -1,0 +1,14 @@
+# Nixpacks configuration for Railway deployment
+# Automatically installs Python 3.11, FFmpeg, and Opus audio codecs
+
+[phases.setup]
+nixPkgs = ["python311", "ffmpeg-full", "libopus"]
+
+[phases.install]
+cmds = [
+    "python -m pip install --upgrade pip",
+    "pip install --no-cache-dir -r requirements.txt"
+]
+
+[start]
+cmd = "python main.py"

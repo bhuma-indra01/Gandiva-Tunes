@@ -1,0 +1,12 @@
+# Gandiva Tunes Discord Music Bot Requirements
+# Created for: Syko Reddy
+
+discord.py[voice]>=2.3.2
+yt-dlp>=2024.4.9
+PyNaCl>=1.5.0
+aiosqlite>=0.20.0
+spotipy>=2.23.0
+python-dotenv>=1.0.1
+aiohttp>=3.9.5
+requests>=2.31.0
+colorama>=0.4.6

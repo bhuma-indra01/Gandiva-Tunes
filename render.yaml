@@ -1,0 +1,24 @@
+# Render Blueprint for Gandiva Tunes Discord Music Bot
+# Credits: Syko Reddy
+
+services:
+  - type: web
+    name: gandiva-tunes
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: DEFAULT_PREFIX
+        value: "!"
+      - key: PORT
+        value: "10000"
+      - key: SPOTIPY_CLIENT_ID
+        sync: false
+      - key: SPOTIPY_CLIENT_SECRET
+        sync: false

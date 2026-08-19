@@ -1,0 +1,23 @@
+# Environment variables
+.env
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# SQLite Database Files
+*.db
+*.db-journal
+database/*.db
+
+# Generated Zip
+Gandiva_Tunes_Bot.zip
+
+# System Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
